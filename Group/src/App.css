@@ -1,42 +1,114 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+.app-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(#232526, #414345)
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.app-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+  box-sizing: border-box;
+  position: absolute;
 }
 
-.card {
-  padding: 2em;
+
+.profile-card {
+  background: #1e1e1e;
+  border-radius: 16px;
+  padding: 20px;
+  width: 800px;
+  max-width: 90%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
 }
 
-.read-the-docs {
-  color: #888;
+.header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.profile-info {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 5px solid #d6d5e3;
+}
+
+.ign {
+  font-style: italic;
+  color: #bbb;
+}
+
+.games-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.games-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.game-card {
+  background: #1e1e1e;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.game-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+
+.game-card h5 {
+  margin: 15px 0 5px;
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.game-card p {
+  margin: 0 0 15px;
+  font-size: 1rem;
+  color: #bbb;
 }

@@ -2,6 +2,13 @@ import GameCard from './Gamecard'
 import Header from './Header'   
 
 function ProfileCard({ teamName, logo, profilePic, realName, ign, games }) {
+  
+  const stats = {
+    hours: 1200,
+    games: games.length,
+    achievements: 45
+  }
+
   return (
     <div className="profile-card">
 
@@ -11,6 +18,22 @@ function ProfileCard({ teamName, logo, profilePic, realName, ign, games }) {
         <img src={profilePic} alt="Profile" className="profile-pic" />
         <h3>{realName}</h3>
         <p className="ign">IGN: {ign}</p>
+      </div>
+
+      {/* Profile Stats Section */}
+      <div className="profile-stats">
+        <div className="stat">
+          <h4>{stats.hours}</h4>
+          <p>Hours of Play</p>
+        </div>
+        <div className="stat">
+          <h4>{stats.games}</h4>
+          <p>Games</p>
+        </div>
+        <div className="stat">
+          <h4>{stats.achievements}</h4>
+          <p>Achievements</p>
+        </div>
       </div>
 
       <div className="games-section">

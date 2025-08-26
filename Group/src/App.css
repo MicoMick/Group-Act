@@ -112,3 +112,30 @@ body {
   font-size: 1rem;
   color: #bbb;
 }
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  margin: 30px 0;
+  padding: 20px;
+  background: #2a2a2a;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.stat {
+  text-align: center;
+  color: #fff;
+}
+
+.stat h4 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #d6d5e3;
+}
+
+.stat p {
+  margin: 5px 0 0;
+  font-size: 0.9rem;
+  color: #bbb;
+}
